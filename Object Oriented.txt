@@ -1,0 +1,30 @@
+/*example of OOD*/
+/*coded in robomongo */
+db.createCollection("housed_pets");
+db.housed_pets.remove({});
+db.housed_pets.insert({forename:"Elvis",
+                      Surname:"Presley",
+                      Pet_1:{
+                          type: "Whale",
+                          sex: "M",
+                          }
+                      });
+
+db.housed_pets.insert({forename:"Bob",
+                      Surname:"Marley",
+                      Pet_1:{
+                          type: "Panda",
+                          sex: "M",
+                          }
+                      });
+
+db.housed_pets.insert({forename:"Daniel",
+                      middle_name: "Paul",
+                      Surname:"Wilkinson",
+                      Pet_1:{
+                          type: "Koala",
+                          sex: "M",
+                          }
+                      });
+
+db.housed_pets.find({});
